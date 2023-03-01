@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_dir", default="./data", type=str, help="path to training data")
-    parser.add_argument("--save_dir", default="./generated_data\\", type=str, help="path to training data")
+    parser.add_argument("--save_dir", default="./generated_data", type=str, help="path to training data")
     args = parser.parse_args()
     os.makedirs(args.save_dir,exist_ok=True)
     cp = open(os.path.join(args.save_dir, "corpus.txt"), "w")
